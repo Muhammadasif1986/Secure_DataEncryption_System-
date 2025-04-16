@@ -173,7 +173,7 @@ def login_page():
             st.session_state.locked_out = False
             st.success("✅ Reauthorized successfully!")
             time.sleep(1)
-            st.rerun()  # Changed from st.experimental_rerun() to st.rerun()
+            st.rerun()
         else:
             st.error("❌ Incorrect password!")
 
